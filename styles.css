@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #111111;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: all 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.title {
+  color: rgba(238, 238, 238, 0.349);
+  z-index: 10;
+  font-size: 3rem;
+}
